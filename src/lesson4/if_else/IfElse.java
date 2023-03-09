@@ -25,7 +25,7 @@ public class IfElse {
 
         //Задана стоимость билета по маршруту Днепр - Киев.
         //В зависимости от возраста предоставляется скидка
-        double cost = 500;
+        /*double cost = 500;
         Scanner in = new Scanner(System.in);
         System.out.println("Age");
         int age = in.nextInt();
@@ -42,7 +42,7 @@ public class IfElse {
         }
         else  {
             System.out.println("Цена билета "+ cost);
-        }
+        }*/
     }
 }
 

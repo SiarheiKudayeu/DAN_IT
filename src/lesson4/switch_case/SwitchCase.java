@@ -17,6 +17,25 @@ public class SwitchCase {
     }*/
 
         //вывод вашей профессии на консоль в связи с тем, что вы укажете с клавиатуры
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введитье профессию");
+        String string = in.nextLine();
+        switch (string.toUpperCase()){
+            case ("AQA"):
+            case ("QA"):
+                System.out.println("Поздравляю ты тестировщик");
+                break;
+            case ("FRONT"):
+            case ("DEV"):
+                System.out.println("Поздравляю ты разработчик");
+                break;
+            case ("RM"):
+            case ("MAN"):
+                System.out.println("Поздравляю ты менеджер");
+                break;
+            default:
+                System.out.println("Ты никто");
+        }
 
 
     }
