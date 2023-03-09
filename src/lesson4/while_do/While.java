@@ -30,10 +30,10 @@ public class While {
                 continue;
             }
             countOfPhoto=countOfPhoto+temp;
-            if(countOfPhoto>100){
+            /*if(countOfPhoto>100){
                 System.out.println("такое кол-во фото не влезет");
                 continue;
-            }
+            }*/
             System.out.println("Осталось места на "+(100-countOfPhoto));
         }
 
