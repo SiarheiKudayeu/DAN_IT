@@ -1,7 +1,10 @@
-package lesson3;
+package lesson4.switch_case;
+
+import java.util.Scanner;
 
 public class SwitchCase {
-    /*switch(переменная для сравнения)
+    public static void main(String[] args) {
+      /*switch(переменная для сравнения)
     {
         case значение1:
             (код для выполнения при равенстве переменной и значения);
@@ -12,5 +15,11 @@ public class SwitchCase {
         default:
             (код для если не возникло ни одного совпадения);
     }*/
+
+        //вывод вашей профессии на консоль в связи с тем, что вы укажете с клавиатуры
+
+
+    }
+
 
 }
