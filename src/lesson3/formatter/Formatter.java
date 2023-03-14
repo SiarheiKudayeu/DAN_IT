@@ -57,14 +57,14 @@ public class Formatter {
         //p - добавляет информацию о pm и am
 
         //System.out.printf("Сейчас время равно %tT\n", date);
-        //System.out.printf("Сейчас время равно %1$tH:%1$tM:%1$tS:%1$tL:%1$tN %1$tp", date);
+        System.out.printf("Сейчас время равно %1$tH:%1$tM:%1$tS:%1$tL:%1$tN %1$tp", date);
 
         //A - день недели, d - две цифры дата в цифрах.
         //B -  название месяц, ,m - месяц в виде цифры.
         //Y - полный год, y - две финальные цифры года.
         //System.out.printf("Выведем дату в одном формате %1$tA %1$tB %1$tY\n", date);
         //System.out.printf("Выведем дату в другом формате %1$td:%1$tm:%1$ty\n", date);
-        //System.out.printf("Выведем дату в третьем формате %1$tA %1$td %1$tB\n", date);
+        System.out.printf("Выведем дату в третьем формате %1$tA %1$td %1$tB\n", date);
         String date2 = String.format("%1$tA %1$td %1$tB", date);
         System.out.println(date2);
 
