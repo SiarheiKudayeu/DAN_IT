@@ -8,6 +8,8 @@ public class Ex1 {
         //Пользователь вводит строку с клавиатуры. Все цифры из данной строки
         //должны быть помещены в массив. Массив необходимо отсортировать по возрастанию
         //и вывести на экран.
+
+
         Scanner in = new Scanner(System.in);
         System.out.println("Введите строку");
         String st = in.nextLine();
@@ -31,7 +33,36 @@ public class Ex1 {
                 }
             }
         }
-        //Разбивае полученную строку на массив строк, и создаем новый массив
+
+        //System.out.println(result);
+        String[] numbers = result.split("\\s");
+        int [] finalarray = new int [result.split("\\s").length];
+        for(int w =0;w<numbers.length;w++){
+            finalarray[w]=Integer.valueOf(numbers[w]);
+            System.out.print(finalarray[w]+" ");
+        }
+        for(int i = finalarray.length-1;i>=0;i--){
+            int max;
+            for(int a = i-1; a>=0;a--){
+                if(finalarray[i]<finalarray[a]){
+                   max= finalarray[a];
+                    finalarray[a]=finalarray[i];
+                    finalarray[i]=max;
+                }
+            }
+        }
+        System.out.println("");
+        for (int i =0;i<finalarray.length;i++){
+            System.out.print(finalarray[i]+" ");
+        }
+
+
+
+
+
+
+
+      /*  //Разбивае полученную строку на массив строк, и создаем новый массив
         //на основе полученного из целочисленных данных
         String[] numbers = result.split("\\s");
         int[] arrayFirst = new int[numbers.length];
@@ -40,22 +71,23 @@ public class Ex1 {
             //System.out.println(arrayFirst[i]);
         }
         //Упорядочиваем данный массив по возрастанию
-        for (int i = arrayFirst.length-1;i>=0;i-- ){
-            for(int a = i-1; a>=0;a--){
+        for (int i = arrayFirst.length - 1; i >= 0; i--) {
+            for (int a = i - 1; a >= 0; a--) {
                 int temp;
-                if(arrayFirst[i]<arrayFirst[a]){
-                    temp=arrayFirst[i];
-                    arrayFirst[i]=arrayFirst[a];
-                    arrayFirst[a]=temp;
+                if (arrayFirst[i] < arrayFirst[a]) {
+                    temp = arrayFirst[i];
+                    arrayFirst[i] = arrayFirst[a];
+                    arrayFirst[a] = temp;
                 }
             }
         }
         //Выводим в консоль элементы массива
-        for (int i = 0; i<arrayFirst.length; i++){
-            System.out.print(arrayFirst[i]+" ");
-        }
-
-
+        for (int i = 0; i < arrayFirst.length; i++) {
+            System.out.print(arrayFirst[i] + " ");
+        }*/
     }
 }
+
+
+
 
