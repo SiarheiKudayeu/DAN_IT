@@ -1,9 +1,8 @@
 package lesson5.arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ex1 {
+public class Ex01 {
     public static void main(String[] args) {
         //Пользователь вводит строку с клавиатуры. Все цифры из данной строки
         //должны быть помещены в массив. Массив необходимо отсортировать по возрастанию
